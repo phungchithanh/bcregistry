@@ -311,6 +311,8 @@ export default {
       header: 'View Fees by Product Type',
       selectTitle: 'Choose a product to view fees by product type:',
       selectDefault: 'All Products',
+      note:'Note:',
+      noteContent: 'A priority fee or future effective fee adds an extra $100.00 to the total cost.',
       table: {
         header: {
           service: 'Service',

@@ -307,6 +307,8 @@ export default {
       header: 'Afficher les frais par type de produit',
       selectTitle: 'Choisissez un produit pour afficher les frais par type de produit:',
       selectDefault: 'Tous les produits',
+      note:'Note:',
+      noteContent: 'Des frais prioritaires ou des frais futurs ajoutent 100,00 $ supplémentaires au coût total.',
       table: {
         header: {
           service: 'Service',

@@ -234,7 +234,6 @@ onMounted(async () => {
             </span>
           </div>
         </template>
-
         <div
           class="mb-4"
         >
@@ -250,6 +249,7 @@ onMounted(async () => {
           }"
         />
       </UCard>
+      <p><strong>{{ t('page.productFees.note') }}</strong>  {{ t('page.productFees.noteContent') }} </p>
       <!-- iterate over the grouped products and display them in a card -->
       <UCard
         v-for="(product, index) in filteredProducts"
