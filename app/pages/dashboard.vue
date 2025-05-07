@@ -18,8 +18,6 @@ definePageMeta({
 const isSbcStaff = ref(false)
 const helpHref = 'https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/'
   + 'permits-licences/news-updates/modernization-updates/modernization-resources'
-
-const productFeesHref = `${rtc.productFeesURL}`
 const { data: userProducts, status, error } = await useLazyAsyncData(
   'user-products',
   () => productInfo.getActiveUserProducts(),
@@ -100,13 +98,13 @@ onMounted(async () => {
               {{ $t('page.dashboard.help.productFees.p1') }}
             </p>
             <span>
-              <a
+              <NuxtLink
                 class="text-sm font-semibold text-blue-500 focus:outline-none"
-                :href="productFeesHref"
+                :to="localePath('/product-fees')"
                 target="_blank"
               >
                 {{ $t('page.dashboard.help.productFees.link') }}
-              </a>
+              </NuxtLink>
               <span class="inline-flex align-middle">
                 <UIcon
                   name="i-mdi-open-in-new"
