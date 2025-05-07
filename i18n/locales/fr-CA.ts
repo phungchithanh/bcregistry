@@ -292,10 +292,35 @@ export default {
           title: 'Ajouter des Produits et Services',
           p1: "Pour demander l'accès à des produits et services supplémentaires, contactez l'administrateur du compte de vos Registres de la CB."
         },
+        productFees: {
+          title: 'Frais de produit',
+          p1: 'Pour voir les frais associés aux produits sur Service BC Connect.',
+          link: 'See our fee schedule for details'
+        },
         howToUse: {
           title: 'Aide pour Utiliser les Produits et Services des Registres de la C.B.',
           p1: 'Découvrez les registres et comment utiliser les applications grâce à des guides étape par étape, des vidéos en ligne et des guides rapides téléchargeables.',
           link: "Aller à la Page d'Aide des Applications de Registre"
+        }
+      }
+    },
+    productFees: {
+      title: 'Frais de Produit - Registres et services en ligne de la Colombie-Britannique',
+      h1: 'Frais de Produit',
+      p1: 'Un aperçu des frais associés aux produits sur Service BC Connect.',
+      p2: "Les remboursements ne seront pas traités pour les montants inférieurs à 10 $, sauf demande expresse du client. La TPS n'est pas facturée. Les frais sont sujets à changement.",
+      header: 'Afficher les frais par type de produit',
+      selectTitle: 'Choisissez un produit pour afficher les frais par type de produit:',
+      selectDefault: 'Tous les produits',
+      note:'Note:',
+      noteContent: 'Des frais prioritaires ou des frais futurs ajoutent 100,00 $ supplémentaires au coût total.',
+      table: {
+        header: {
+          service: 'Service',
+          fee: 'Frais',
+          serviceCharge: 'Frais de Service',
+          gst: 'TPS',
+          total: 'Total'
         }
       }
     },
