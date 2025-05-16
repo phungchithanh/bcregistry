@@ -249,7 +249,9 @@ onMounted(async () => {
           }"
         />
       </UCard>
-      <p><strong>{{ t('page.productFees.note') }}</strong>  {{ t('page.productFees.noteContent') }} </p>
+      <p v-if="selectedProduct !== 'CSO'">
+      <strong>{{ t('page.productFees.note') }}</strong>  {{ t('page.productFees.noteContent') }}
+      </p>
       <!-- iterate over the grouped products and display them in a card -->
       <UCard
         v-for="(product, index) in filteredProducts"
